@@ -5,7 +5,7 @@
     "attention","yii2","yii2-module"
   ],
   "type": "yii2-extension",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "authors": [
     {
       "name": "Xu TL",
