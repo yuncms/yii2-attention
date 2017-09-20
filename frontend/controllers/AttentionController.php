@@ -105,7 +105,7 @@ class AttentionController extends Controller
         if ($attention) {
             switch ($model) {
                 case 'question' :
-                    $this->module->notify(Yii::$app->user->id, $source->user_id, 'follow_question', $subject, $source->id);
+                    notify(Yii::$app->user->id, $source->user_id, 'follow_question', $subject, $source->id);
                     doing(Yii::$app->user->id, 'follow_question', get_class($source), $modelId, $subject);
                     $source->updateCounters(['followers' => 1]);
                     break;
