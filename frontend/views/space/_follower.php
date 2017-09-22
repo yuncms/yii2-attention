@@ -10,7 +10,7 @@ use yii\helpers\Html;
     <div class="col-md-10">
         <img class="avatar-32" src="<?= $model->user->getAvatar($model->user_id) ?>"/>
         <div>
-            <a href="<?= Url::to(['/user/space/view', 'id' => $model->user_id]) ?>"><?= $model->user->username ?></a>
+            <a href="<?= Url::to(['/user/space/view', 'id' => $model->user_id]) ?>"><?= $model->user->nickname ?></a>
             <div
                 class="stream-following-followed"><?= $model->user->extend->supports ?><?= Yii::t('attention', 'Support') ?>
                 / <?= $model->user->extend->followers ?><?= Yii::t('attention', 'Follower') ?>

@@ -63,7 +63,7 @@ class AttentionController extends Controller
         if ($model == 'user') {
             /** @var null|\yuncms\user\models\User $source */
             $source = User::findOne($modelId);
-            $subject = $source->username;
+            $subject = $source->nickname;
         } else if ($model == 'question' && Yii::$app->hasModule('question')) {
             $source = \yuncms\question\models\Question::findOne($modelId);
             /** @var null|\yuncms\question\models\Question $source */
