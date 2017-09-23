@@ -30,7 +30,7 @@
         "class": "yii\\i18n\\PhpMessageSource",
         "basePath": "@yuncms/attention/message"
       },
-      "migrationNamespace": "@yuncms/attention/migrations",
+      "migrationNamespace": "yuncms/attention/migrations",
       "backend": {
       },
       "frontend": {
