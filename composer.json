@@ -2,7 +2,9 @@
   "name": "yuncms/yii2-attention",
   "description": "attention",
   "keywords": [
-    "attention","yii2","yii2-module"
+    "attention",
+    "yii2",
+    "yii2-module"
   ],
   "type": "yii2-extension",
   "license": "MIT",
@@ -22,6 +24,19 @@
     }
   },
   "extra": {
+    "yuncms": {
+      "name": "attention",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "basePath": "@yuncms/attention/message"
+      },
+      "migrationNamespace": "@yuncms/attention/migrations",
+      "backend": {
+      },
+      "frontend": {
+        "class": "yuncms\\attention\\frontend\\Module"
+      }
+    },
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
