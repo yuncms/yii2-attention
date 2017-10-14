@@ -25,7 +25,7 @@ class M170827070246Create_attention_table extends Migration
          */
         $this->createTable('{{%attentions}}', [
             'id' => $this->primaryKey(),
-            'user_id' => $this->integer()->notNull(),
+            'user_id' => $this->integer()->unsigned()->notNull(),
             'model_id' => $this->integer()->notNull(),
             'model' => $this->string()->notNull(),
             'created_at' => $this->integer()->unsigned()->notNull(),
