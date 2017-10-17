@@ -10,7 +10,7 @@ use yuncms\user\models\User;
  * @var  User $model
  * @var string $type
  */
-$this->context->layout = '@yuncms/user/frontend/views/layouts/space';
+$this->context->layout = '@yuncms/space/frontend/views/layouts/space';
 $this->params['user'] = $model;
 
 if ($type == 'questions') {
